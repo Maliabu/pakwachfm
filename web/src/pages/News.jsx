@@ -12,9 +12,9 @@ export default function News(){
                     <img src="https://pbs.twimg.com/media/GGcLjksXcAA-bJe?format=jpg&name=small" width="100%" height="100%"/>
                 </div>
                 <div className="col-lg-4 col-sm-12 px-lg-5 px-3 pt-5 text-start">
-                <h5 className="lh-1 text-start">
+                <h5 className="lh-1 text-start p-3">
                 Pakwach District leaders decry corruption in fisheries enforcement, accusing the Fisheries Protection Unit of unjust practices. They highlighted officers' alleged extortion of money from locals and demanded the release of confiscated boats and detainees.</h5>
-                    <h6 className="text-start mt-3">16 Feb 2024 | PAKWACH FM</h6><div className="d-flex flex-row mt-5">
+                    <h6 className="text-start mt-3 px-3">16 Feb 2024 | PAKWACH FM</h6><div className="d-flex flex-row mt-3 mx-3">
                     <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click"><h6>#PakwachFm</h6></a></div>
                     <div>
                     </div>

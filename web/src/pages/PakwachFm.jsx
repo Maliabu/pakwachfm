@@ -2,7 +2,7 @@ import React from "react";
 import Image from '../images/IMG-20230224-WA0017.jpg'
 import Transport from '../images/3.jpg'
 
-export default function PakwachFm(){
+export default function PakwachFm(props){
     return(
         <div className="top">
             <div className="row mt-5">
@@ -32,7 +32,7 @@ export default function PakwachFm(){
                     <h5 className="text-start lh-1">advertise here and let everyone see your ad or business</h5>
                     <h6 className="p-2 border-start">get in touch</h6>
                 </div>
-                <div className="row presenters-index p-5 rounded-2 mt-2">
+                <div className="row presenters-index p-5 rounded-2 mt-2 pointer" onClick={props.handletab6}>
                 <h6 className="text-start my-3">in studio with you.... | find out who is bringing you the best gossip | the best music...</h6>
                     <h6 className="mt-5 text-start pt-5">presenters</h6>
                     <h6 className=" p-2 border-start">check em' out</h6>

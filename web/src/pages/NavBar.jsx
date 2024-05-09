@@ -111,13 +111,13 @@ export default function NavBar(props){
                 <img src={Logo} alt="logo" width="15%"/>
             </div>
             <div className="col-2 text-end">
-                <h6 className="mt-3 px-3 border-end">advertise</h6>
+                <h6 className="mt-3 px-3 border-end active pointer" onClick={handleShow2}>advertise</h6>
             </div>
             <div className="col-1 text-end pt-2 rounded-2">
                 <div className="d-flex flex-row justify-content-end">
                     <h6 className="px-2 border-end mt-2">search here</h6>
                 <div className="px-2 pointer">
-                    <FaSearch onClick={handleShow}/>
+                    <FaSearch className="active" onClick={handleShow}/>
                 </div>
             </div>
             <Modal show={show} onHide={handleClose} className="mt-5 p-2">
@@ -155,7 +155,7 @@ export default function NavBar(props){
         <div className="d-flex flex-row p-2 presenters-index">
         <h6 className="mx-5 mt-2">entertainment | sports bank | culture | news and gossip ...</h6>
             <p className="small lh-1 text-start mx-5">sports and entertainment, culture and so much more here <br/> on 100.2 Pakwach fm</p>
-            <h6 className="border-start mx-3 my-2 pt-2 px-3">get in touch</h6>
+            <h6 className="border-start mx-3 my-2 pt-2 px-3 active pointer" onClick={handleShow2}>get in touch</h6>
         </div>
         </div>
         <div className="d-sm-block d-md-none d-lg-none nav-top bg-pakwach1">
@@ -184,7 +184,7 @@ export default function NavBar(props){
             <img src={Logo} alt="logo" width="60%"/>
             </div>
         <div className="col-2 text-end">
-        <FaSearch className="mt-3" onClick={handleShow}/>
+        <FaSearch className="mt-3 active" onClick={handleShow}/>
         </div>
         </div>
         <div className="row">
@@ -216,7 +216,7 @@ export default function NavBar(props){
         </div>
         <div className="px-lg-5 px-4 py-3">
             <div>
-                <TabContent id="tab1" activeTab={activeTab}><Home/></TabContent>
+                <TabContent id="tab1" activeTab={activeTab}><Home handletab6 = {handleTab6}/></TabContent>
             </div>
             <div>
                 <TabContent id="tab3" activeTab={activeTab} ><Programming/></TabContent>
