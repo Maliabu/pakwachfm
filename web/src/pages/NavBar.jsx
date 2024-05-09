@@ -15,6 +15,7 @@ import Logo from '../images/logo.png'
 import Headlines from "./Headlines";
 import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 import {FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaArrowDown, FaSearch} from 'react-icons/fa'
 
 export default function NavBar(props){
@@ -26,6 +27,7 @@ export default function NavBar(props){
     const [activeTab, setActiveTab] = useState("tab1")
     const [show, setShow] = useState(false)
     const [show1, setShow1] = useState(false)
+    const [show2, setShow2] = useState(false)
     const searchCriteria = [
         {
             "name": "news",
@@ -59,17 +61,24 @@ export default function NavBar(props){
             )
         }
     }
+    const sendMail = () => {}
     const handleShow = () => {
         setShow(true)
     }
     const handleShow1 = () => {
         setShow1(true)
     }
+    const handleShow2 = () => {
+        setShow2(true)
+    }
     const handleClose = () => {
         setShow(false)
     }
     const handleClose1 = () => {
         setShow1(false)
+    }
+    const handleClose2 = () => {
+        setShow2(false)
     }
     const handleTab1 = () => {
         setActiveTab("tab1")
@@ -191,8 +200,18 @@ export default function NavBar(props){
             </Modal>
         </div>
         <div className="d-flex flex-row p-3 presenters-index">
-            <h6 className="small border rounded p-2">advertise</h6>
-            <h6 className="lh-1 mx-3">entertainment | culture | news</h6>
+            <h6 className="small button rounded p-2" onClick={handleShow2}>advertise</h6>
+            <h6 className="lh-1 mx-3 mt-2">entertainment | culture | news</h6>
+        <div className="row">
+            <Modal show={show2} onHide={handleClose2} className="mt-5 p-2">
+                <Form className="p-4">
+                    <Form.Label><h6>leave a message</h6></Form.Label>
+                    <Form.Control autoFocus placeholder="email" type="text" name="search" onChange={handleSearch}/>
+                    <Form.Control placeholder="leave a message" type="text" name="search" onChange={handleSearch} className="my-2"/>
+                    <h6 type="submit" variant="outlined" onClick={sendMail} className="mx-5 p-3 text-center rounded-2 button">Send</h6>
+                </Form>
+            </Modal>
+        </div>
         </div>
         </div>
         <div className="px-lg-5 px-4 py-3">
@@ -248,7 +267,9 @@ export default function NavBar(props){
             </div>
             <div className="d-flex flex-row justify-content-center p-lg-5 p-4">
                 <h6 className="text-start">follow pakwachfm on <br/> social media</h6>
-                <FaFacebook size={20} className="mx-3"/><FaTwitter size={20}/><FaWhatsapp size={20} className="mx-3"/><FaYoutube size={20}/>
+                <div className="active">
+                <FaFacebook size={30} className="mx-2"/><FaTwitter size={30}/><FaWhatsapp size={30} className="mx-2"/><FaYoutube size={30}/>
+                </div>
             </div>
         </div>
         </div>

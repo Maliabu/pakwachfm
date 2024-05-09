@@ -68,6 +68,10 @@ h5{
 .link{
   color: #F26425 !important;
 }
+.button{
+  background-color: #F26425 !important;
+  color: whitesmoke !important;
+}
 a{
   color: #F26425 !important;
   text-decoration: none !important;
