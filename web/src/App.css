@@ -38,13 +38,98 @@
   }
 }
 .main{
-  background-color: rgb(239, 238, 238);
+  background-color: rgb(243, 243, 243);
   color: #282c34;
 }
 .bg-pakwach{
-  background-color: rgb(0, 68, 255);
+  background-color: #1C4176;
   color: aliceblue;
+}
+.bg-pakwach2{
+  background-color: #143159;
+  color: aliceblue;
+}
+.bg-pakwach1{
+  background-color: rgb(255, 255, 255);
+  color: #0a0a0a;
 }
 h6{
   font-size: small !important;
+  text-transform: uppercase !important;
+  line-height: 90% !important;
+}
+.small{
+  font-weight: small !important;
+}
+h5{
+  line-height: 90% !important;
+  color: #282c34 !important;
+}
+.link{
+  color: #F26425 !important;
+}
+a{
+  color: #F26425 !important;
+  text-decoration: none !important;
+}
+.active{
+  color: #F26425;
+  /* color: #fa9d74; */
+  cursor: pointer;
+}
+.tab-item{
+  cursor: pointer;
+}
+button.navbar-toggler.collapsed{
+  border: none !important;
+  text-align: center;
+}
+.nav-toggler{
+  border: none !important;
+}
+.navbar-toggler:focus{
+  border: none !important;
+  box-shadow: none !important;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+  border: none !important;
+  box-shadow: none !important;
+}
+.nav-top{
+  position: fixed;
+  margin-top: 0%;
+  z-index: 1;
+  width: 100%;
+}
+.modal-backdrop{
+  opacity: 0 !important;
+}
+.modal-content{
+  border: none !important;
+  outline: none !important;
+}
+.modal-dialog{
+  margin: 0% !important;
+}
+.pointer{
+  cursor: pointer;
+}
+.presenters-index{
+  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.958)), url("images/verrati.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
+.bg-gossip{
+  background: -webkit-linear-gradient(top,#1c4276b1,#1C4176), url("images/Pakwach\ Fm\ Collateral_BIZ\ CARD.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
+img{
+  border-radius: 5px;
+}
+.top{
+  margin-top: 18%;
 }
