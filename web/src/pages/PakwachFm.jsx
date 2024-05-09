@@ -9,25 +9,27 @@ export default function PakwachFm(){
             <div className="col-lg-9 col-sm-12 bg-white p-0 rounded-2">
                 <div className="row">
                 <div className="col-lg-8 col-sm-12">
-                    <img src={Image} width="100%" height="100%"/>
+                    <img src="https://pbs.twimg.com/media/GGcLjksXcAA-bJe?format=jpg&name=small" width="100%" height="100%"/>
                 </div>
                 <div className="col-lg-4 col-sm-12 px-lg-5 px-5 pt-5 text-start">
-                    <h5>HIGHLIGHTS | SPORTS</h5>
-                    <h5 className="lh-1">
-                    Paidha Black Angels to Host next games in Maracha District</h5>
-                    <h6>Feb 2023 | PAKWACH FM</h6>
+                <h5 className="lh-1 text-start">
+                Pakwach District leaders decry corruption in fisheries enforcement</h5>
+                    <h6 className="text-start mt-3">16 Feb 2024 | PAKWACH FM</h6><div className="d-flex flex-row mt-3">
+                    <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click"><h6>#PakwachFm</h6></a></div>
                     <div>
-                    <img src={Transport} width="100%" height="100%" className="mt-5"/>
-                    <h5 className="lh-1 mt-3">Facts/News Update: What is the state of public transport now in Pakwach?</h5>
-                    <h6>Feb 2023 | PAKWACH FM</h6>
+                    <img src="https://pbs.twimg.com/media/GFJUCwUXUAAljSz?format=jpg&name=small" width="100%" height="100%"/>
+                    <h5 className="lh-1 my-3">Pakwach District calls for a General Hospital to address the health challenges</h5>
+                    <h6>31 Jan 2024 | PAKWACH FM</h6>
+                    <div className="d-flex flex-row mt-3">
+                    <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click"><h6>#PakwachFm</h6></a></div>
+                    <div></div>
                     </div>
                 </div>
                 </div>
             </div>
                 <div className="col-lg-3 px-4">
                 <div className="row bg-white  border-top border-5 border-black p-lg-5 p-3 rounded-2 d-none d-md-block d-lg-block">
-                <h6 className="text-start mb-3">pssst! over here | check these out | work with us</h6>
-                    <p className="text-start lh-1 small">advertise here and let everyone see your ad or business</p>
+                    <h5 className="text-start lh-1">advertise here and let everyone see your ad or business</h5>
                     <h6 className="p-2 border-start">get in touch</h6>
                 </div>
                 <div className="row presenters-index p-5 rounded-2 mt-2">

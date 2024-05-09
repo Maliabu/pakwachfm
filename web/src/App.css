@@ -121,6 +121,24 @@ button:focus:not(:focus-visible) {
   background-repeat: no-repeat;
   color: aliceblue !important;
 }
+.presenters-index1{
+  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.958)), url("images/Dj\ Cwinya.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
+.programs-index{
+  background: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),#121212,#121212fa,#121212fa), url("images/mic.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
+.women{
+  background: -webkit-linear-gradient(right,rgba(0, 0, 0, 0),#070707), url("images/women.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
 .bg-gossip{
   background: -webkit-linear-gradient(top,#1c4276b1,#1C4176), url("images/Pakwach\ Fm\ Collateral_BIZ\ CARD.png");
   background-size: cover;

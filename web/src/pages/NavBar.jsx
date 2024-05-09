@@ -36,8 +36,8 @@ export default function NavBar(props){
             "tab": "tab3"
         },
         {
-            "name": "sports",
-            "tab": "tab5"
+            "name": "presenters",
+            "tab": "tab6"
         },
         {
             "name": "about",
@@ -153,17 +153,17 @@ export default function NavBar(props){
         <div className="row px-2 py-2 justify-content-start">
         <div className="col-2">
         <img src={Menu} alt="logo" width="60%" className="mt-2" onClick={handleShow1}/>
-            <Modal show={show1} onHide={handleClose1} className="mt-5 p-0">
+            <Modal show={show1} onHide={handleClose1} className="mt-5 p-0 w-75">
             <div className="py-5 px-4">
                 <p className="small">Dashboard</p>
-                <div className="py-2 px-3 main rounded-2">
+                <div className="py-2 border-top border-bottom">
                 <div className="py-3"><TabItem id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab1} show1={show1} setShow1={setShow1} title={<span className="tab-item">Home</span>}/></div>
                 <div>
                 <TabItem id="tab3" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab3} show1={show1} setShow1={setShow1} title={<span className="tab-item">Programs</span>}/></div>
                 <div className="py-3">
                 <TabItem id="tab4" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab4} show1={show1} setShow1={setShow1} title={<span className="tab-item">News</span>}/></div>
                 <div>
-                <TabItem id="tab5" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab5} show1={show1} setShow1={setShow1} title={<span className="tab-item">Sports</span>}/></div>
+                <TabItem id="tab6" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab5} show1={show1} setShow1={setShow1} title={<span className="tab-item">presenters</span>}/></div>
                 <div className="py-3">
                 <TabItem id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab2} show1={show1} setShow1={setShow1} title={<span className="tab-item">About</span>}/></div>
                 </div>
@@ -190,8 +190,9 @@ export default function NavBar(props){
                 </div>
             </Modal>
         </div>
-        <div className="row p-3 presenters-index">
-            <h6 className="small">news & sports | entertainment | ads</h6>
+        <div className="d-flex flex-row p-3 presenters-index">
+            <h6 className="small border rounded p-2">advertise</h6>
+            <h6 className="lh-1 mx-3">entertainment | culture | news</h6>
         </div>
         </div>
         <div className="px-lg-5 px-4 py-3">
