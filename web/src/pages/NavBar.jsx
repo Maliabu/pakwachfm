@@ -16,6 +16,7 @@ import Headlines from "./Headlines";
 import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
+import Advertise from "./Advertise";
 import {FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaArrowDown, FaSearch, FaMegaport} from 'react-icons/fa'
 
 export default function NavBar(props){
@@ -98,6 +99,9 @@ export default function NavBar(props){
     const handleTab6 = () => {
         setActiveTab("tab6")
     }
+    const handleTab7 = () => {
+        setActiveTab("tab7")
+    }
     const handleSearch = (event) => {
         const name = event.target.name;
         const value = event.target.value;
@@ -111,7 +115,7 @@ export default function NavBar(props){
                 <img src={Logo} alt="logo" width="15%"/>
             </div>
             <div className="col-2 text-end">
-                <h6 className="mt-3 px-3 border-end active pointer" onClick={handleShow2}>advertise</h6>
+                <h6 className="mt-3 px-3 border-end active pointer" onClick={handleTab7}>advertise</h6>
             </div>
             <div className="col-1 text-end pt-2 rounded-2">
                 <div className="d-flex flex-row justify-content-end">
@@ -202,7 +206,7 @@ export default function NavBar(props){
             </Modal>
         </div>
         <div className="d-flex flex-row bg-white shadow">
-        <div className="col-4 main-orange"><h6 className="small mt-3 text-white" onClick={handleShow2}>advertise</h6></div>
+        <div className="col-4 main-orange"><h6 className="small mt-3 text-white" onClick={handleTab7}>advertise</h6></div>
         <div className="col-8"><h6 className="lh-1 mx-3 mt-2">entertainment | culture | news | sports </h6></div>
         <div className="row">
             <Modal show={show2} onHide={handleClose2} className="mt-5 p-2">
@@ -234,6 +238,9 @@ export default function NavBar(props){
             </div>
             <div>
                 <TabContent id="tab2" activeTab={activeTab} ><About/></TabContent>
+            </div>
+            <div>
+                <TabContent id="tab7" activeTab={activeTab} ><Advertise/></TabContent>
             </div>
         </div>
         <div className="p-lg-5 p-3 bg-pakwach1"><Headlines/></div>

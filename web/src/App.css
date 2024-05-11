@@ -164,6 +164,18 @@ button:focus:not(:focus-visible) {
   background-repeat: no-repeat;
   color: aliceblue !important;
 }
+.pepsi{
+  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.958)), url("images/65a2f4_c2c7b955ef8e4639ae750b03c9b58d7c_mv2_d_1900_1425_s_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
+.mtn{
+  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.958)), url("https://i0.wp.com/mbu.ug/wp-content/uploads/2021/03/MTN-Senkyu-e1617219974439.jpg?fit=813%2C525&ssl=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
 img{
   border-radius: 5px;
 }
