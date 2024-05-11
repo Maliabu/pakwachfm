@@ -206,8 +206,8 @@ export default function NavBar(props){
             </Modal>
         </div>
         <div className="d-flex flex-row bg-white shadow">
-        <div className="col-4 main-orange"><h6 className="small mt-3 text-white" onClick={handleTab7}>advertise</h6></div>
-        <div className="col-8"><h6 className="lh-1 mx-3 mt-2">entertainment | culture | news | sports </h6></div>
+        <div className="col-4 main-orange"><h6 className="small mt-4 text-white" onClick={handleTab7}>advertise</h6></div>
+        <div className="col-8 p-2"><h6 className="lh-1 mx-3 mt-2">entertainment | culture | news | sports </h6></div>
         <div className="row">
             <Modal show={show2} onHide={handleClose2} className="mt-5 p-2">
                 <Form className="p-4">

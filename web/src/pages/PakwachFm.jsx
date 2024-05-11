@@ -2,6 +2,7 @@ import React from "react";
 import Image from '../images/IMG-20230224-WA0017.jpg'
 import Transport from '../images/3.jpg'
 import Megaphone from '../images/megaphone.png'
+import FormFloatingBasicExample from "./FloatingForm";
 
 export default function PakwachFm(props){
     return(
@@ -13,8 +14,8 @@ export default function PakwachFm(props){
                     <img src="https://pbs.twimg.com/media/GGcLjksXcAA-bJe?format=jpg&name=small" width="100%" height="100%"/>
                 </div>
                 <div className="col-lg-4 col-sm-12 px-lg-5 px-5 pt-5 text-start">
-                <h5 className="lh-1 text-start">
-                Pakwach District leaders decry corruption in fisheries enforcement</h5>
+                <h4 className="lh-1 text-start">
+                Pakwach District leaders decry corruption in fisheries enforcement</h4>
                     <h6 className="text-start mt-3">16 Feb 2024 | PAKWACH FM</h6><div className="d-flex flex-row mt-3">
                     <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click" className="d-none"><h6>#PakwachFm</h6></a></div>
                     <div>
@@ -31,13 +32,13 @@ export default function PakwachFm(props){
                 <div className="col-lg-3 px-4">
                 <div className="row presenters-index p-5 rounded-2 pointer" onClick={props.handletab6}>
                 <h6 className="text-start text-white my-3">in studio with you.... | find out who is bringing you the best gossip | the best music...</h6>
-                    <h6 className="mt-5 text-start pt-5">presenters</h6>
-                    <h6 className=" p-2 border-start">check em' out</h6>
+                    <h6 className="mt-5 text-start pt-5 text-white">presenters</h6>
+                    <h6 className=" p-2 border-start text-white">check em' out</h6>
                 </div>
                 <div onClick={props.handletab7} className="row pointer kitenge mt-2 border-top border-5 border-black p-lg-5 p-3 rounded-2 d-none d-md-block d-lg-block">
                 {/* <img src={Megaphone} width="100%" height="100%"/> */}
                     <h5 className="text-start lh-1 text-white">Let us take your business to the greater westnile</h5>
-                    <h6 className="p-2 border-start">advertise your business</h6>
+                    <h6 className="p-2 border-start text-start text-white">advertise your business</h6>
                 </div>
                 </div>
             </div>

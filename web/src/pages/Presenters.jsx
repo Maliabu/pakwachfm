@@ -11,16 +11,16 @@ export default function Presenters(){
                 <div className="col-lg-4 p-lg-5 text-start">
                 <div className="row presenters-index p-5 rounded-2 mt-2">
                     <h6 className="text-start text-white my-3">in studio with you.... | find out who is bringing you the best gossip</h6>
-                    <h6 className="mt-5 text-start pt-5">presenter</h6>
-                    <h6 className=" p-2 border-start">veratti</h6>
+                    <h6 className="mt-5 text-start pt-5 text-white">presenter</h6>
+                    <h6 className=" p-2 border-start text-white">veratti</h6>
                 </div>
                 </div>
-                <div className="col-lg-4 p-2 text-start">
+                <div className="col-lg-4 text-start">
                 <div className="row p-lg-5 p-3">
                 <div className="row presenters-index1 p-5 rounded-2 mt-2">
                     <h6 className="text-start text-white my-3">in studio with you.... | find out who is bringing you the best music...</h6>
-                    <h6 className="mt-5 text-start pt-5">dj</h6>
-                    <h6 className=" p-2 border-start">cwinya ai</h6>
+                    <h6 className="mt-5 text-start pt-5 text-white">dj</h6>
+                    <h6 className=" p-2 border-start text-white">cwinya ai</h6>
                 </div>
                 </div>
                 </div>
