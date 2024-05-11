@@ -1,6 +1,7 @@
 import React from "react";
 import Image from '../images/IMG-20230224-WA0017.jpg'
 import Transport from '../images/3.jpg'
+import Megaphone from '../images/megaphone.png'
 
 export default function PakwachFm(props){
     return(
@@ -28,14 +29,15 @@ export default function PakwachFm(props){
                 </div>
             </div>
                 <div className="col-lg-3 px-4">
-                <div className="row bg-white  border-top border-5 border-black p-lg-5 p-3 rounded-2 d-none d-md-block d-lg-block">
-                    <h5 className="text-start lh-1">advertise here and let everyone see your ad or business</h5>
-                    <h6 className="p-2 border-start">get in touch</h6>
-                </div>
-                <div className="row presenters-index p-5 rounded-2 mt-2 pointer" onClick={props.handletab6}>
+                <div className="row presenters-index p-5 rounded-2 pointer" onClick={props.handletab6}>
                 <h6 className="text-start text-white my-3">in studio with you.... | find out who is bringing you the best gossip | the best music...</h6>
                     <h6 className="mt-5 text-start pt-5">presenters</h6>
                     <h6 className=" p-2 border-start">check em' out</h6>
+                </div>
+                <div onClick={props.handletab7} className="row pointer kitenge mt-2 border-top border-5 border-black p-lg-5 p-3 rounded-2 d-none d-md-block d-lg-block">
+                {/* <img src={Megaphone} width="100%" height="100%"/> */}
+                    <h5 className="text-start lh-1 text-white">Let us take your business to the greater westnile</h5>
+                    <h6 className="p-2 border-start">advertise your business</h6>
                 </div>
                 </div>
             </div>

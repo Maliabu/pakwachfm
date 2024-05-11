@@ -115,7 +115,7 @@ export default function NavBar(props){
                 <img src={Logo} alt="logo" width="15%"/>
             </div>
             <div className="col-2 text-end">
-                <h6 className="mt-3 px-3 border-end active pointer" onClick={handleTab7}>advertise</h6>
+                <h6 className="mt-3 px-3 border-end active pointer" onClick={handleTab7}>advertise with us</h6>
             </div>
             <div className="col-1 text-end pt-2 rounded-2">
                 <div className="d-flex flex-row justify-content-end">
@@ -222,7 +222,7 @@ export default function NavBar(props){
         </div>
         <div className="px-lg-5 px-4 py-3">
             <div>
-                <TabContent id="tab1" activeTab={activeTab}><Home handletab6 = {handleTab6} handletab3 = {handleTab3}/></TabContent>
+                <TabContent id="tab1" activeTab={activeTab}><Home handletab6 = {handleTab6} handletab3 = {handleTab3} handletab7 = {handleTab7}/></TabContent>
             </div>
             <div>
                 <TabContent id="tab3" activeTab={activeTab} ><Programming/></TabContent>

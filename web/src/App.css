@@ -140,6 +140,12 @@ button:focus:not(:focus-visible) {
   background-repeat: no-repeat;
   color: aliceblue !important;
 }
+.kitenge{
+  background: -webkit-linear-gradient(right,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.958)), url("images/kitenge.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue !important;
+}
 .presenters-index1{
   background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.958)), url("images/Dj\ Cwinya.jpg");
   background-size: cover;
