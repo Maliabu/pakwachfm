@@ -111,15 +111,15 @@ export default function NavBar(props){
         <div className="main-image">
         <div className="d-none d-md-block d-lg-block nav-top">
         <div className="row p-3 bg-white justify-content-start">
-            <div className="col-9 text-start">
-                <img src={Logo} alt="logo" width="15%"/>
+            <div className="col-6 text-start">
+                <img src={Logo} alt="logo" width="25%"/>
             </div>
             <div className="col-2 text-end">
                 <h6 className="mt-3 px-3 border-end active pointer" onClick={handleTab7}>advertise with us</h6>
             </div>
-            <div className="col-1 text-end pt-2 rounded-2">
+            <div className="col-4 text-end pt-2 rounded-2">
                 <div className="d-flex flex-row justify-content-end">
-                    <h6 className="px-2 border-end mt-2">search here</h6>
+                    <h6 className="px-2"><Form.Control placeholder="search here" type="text" name="search" onClick={handleShow}/></h6>
                 <div className="px-2 pointer">
                     <FaSearch className="active" onClick={handleShow}/>
                 </div>
