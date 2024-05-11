@@ -15,13 +15,13 @@ export default function PakwachFm(props){
                 <h5 className="lh-1 text-start">
                 Pakwach District leaders decry corruption in fisheries enforcement</h5>
                     <h6 className="text-start mt-3">16 Feb 2024 | PAKWACH FM</h6><div className="d-flex flex-row mt-3">
-                    <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click"><h6>#PakwachFm</h6></a></div>
+                    <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click" className="d-none"><h6>#PakwachFm</h6></a></div>
                     <div>
                     <img src="https://pbs.twimg.com/media/GFJUCwUXUAAljSz?format=jpg&name=small" width="100%" height="100%"/>
                     <h5 className="lh-1 my-3">Pakwach District calls for a General Hospital to address the health challenges</h5>
                     <h6>31 Jan 2024 | PAKWACH FM</h6>
                     <div className="d-flex flex-row mt-3">
-                    <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click"><h6>#PakwachFm</h6></a></div>
+                    <a href="https://twitter.com/hashtag/PakwachFm?src=hashtag_click" className="d-none"><h6>#PakwachFm</h6></a></div>
                     <div></div>
                     </div>
                 </div>

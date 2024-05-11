@@ -41,8 +41,21 @@
   background-color: rgb(243, 243, 243);
   color: #282c34;
 }
+.main-image{
+  background-image: url("images/main-image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* .main{
+  background-color: #e9f2f9;
+  color: #282c34;
+} */
+/* .bg-pakwach{
+  background-color: #323738;
+  color: aliceblue;
+} */
 .bg-pakwach{
-  background-color: #1C4176;
+  background-color: #0c283d;
   color: aliceblue;
 }
 .bg-pakwach2{

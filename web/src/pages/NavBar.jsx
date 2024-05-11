@@ -104,9 +104,9 @@ export default function NavBar(props){
         setFormData({...formData, [name]: value });
     }
     return(
-        <div className="main">
+        <div className="main-image">
         <div className="d-none d-md-block d-lg-block nav-top">
-        <div className="row p-3 main justify-content-start">
+        <div className="row p-3 bg-white justify-content-start">
             <div className="col-9 text-start">
                 <img src={Logo} alt="logo" width="15%"/>
             </div>
@@ -132,7 +132,8 @@ export default function NavBar(props){
             </Modal>
             </div>
         </div>
-        <div className=" row px-lg-5 p-3 bg-pakwach1">
+        <div className="pb-1">
+        <div className=" row px-lg-5 p-3 mx-5 bg-white rounded-bottom-3">
             <div className="col-lg-1 col-2">
                 <TabItem id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab1} title={<span className="tab-item">Home</span>}/>
             </div>
@@ -152,7 +153,8 @@ export default function NavBar(props){
                 <TabItem id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab2} title={<span className="tab-item">About</span>}/>
             </div>
         </div>
-        <div className="d-flex flex-row presenters-index p-0">
+        </div>
+        <div className="d-flex flex-row bg-white shadow p-0">
             <div className="col-5"><h6 className="mx-5 mt-3">entertainment | sports bank | culture | news and gossip ...</h6></div>
             <div className="col-5"><p className="small lh-1 text-start mx-5 mt-2">sports and entertainment, culture and so much more here <br/> on 100.2 Pakwach fm</p></div>
             <div className="col-2 main-orange"><h6 className="px-3 pointer mt-3 text-white" onClick={handleShow2}>get in touch</h6></div>
@@ -199,9 +201,9 @@ export default function NavBar(props){
                 </div>
             </Modal>
         </div>
-        <div className="d-flex flex-row presenters-index">
+        <div className="d-flex flex-row bg-white shadow">
         <div className="col-4 main-orange"><h6 className="small mt-3 text-white" onClick={handleShow2}>advertise</h6></div>
-        <div className="col-8"><h6 className="lh-1 mx-3 mt-2">entertainment | culture | news</h6></div>
+        <div className="col-8"><h6 className="lh-1 mx-3 mt-2">entertainment | culture | news | sports </h6></div>
         <div className="row">
             <Modal show={show2} onHide={handleClose2} className="mt-5 p-2">
                 <Form className="p-4">
