@@ -16,7 +16,7 @@ import Headlines from "./Headlines";
 import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
-import {FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaArrowDown, FaSearch} from 'react-icons/fa'
+import {FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaArrowDown, FaSearch, FaMegaport} from 'react-icons/fa'
 
 export default function NavBar(props){
     const [formData, setFormData] = useState(
@@ -132,7 +132,7 @@ export default function NavBar(props){
             </Modal>
             </div>
         </div>
-        <div className="px-lg-5 p-3 row bg-pakwach2">
+        <div className=" row px-lg-5 p-3 bg-pakwach1">
             <div className="col-lg-1 col-2">
                 <TabItem id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab1} title={<span className="tab-item">Home</span>}/>
             </div>
@@ -152,10 +152,10 @@ export default function NavBar(props){
                 <TabItem id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab2} title={<span className="tab-item">About</span>}/>
             </div>
         </div>
-        <div className="d-flex flex-row p-2 presenters-index">
-        <h6 className="mx-5 mt-2">entertainment | sports bank | culture | news and gossip ...</h6>
-            <p className="small lh-1 text-start mx-5">sports and entertainment, culture and so much more here <br/> on 100.2 Pakwach fm</p>
-            <h6 className="border-start mx-3 my-2 pt-2 px-3 active pointer" onClick={handleShow2}>get in touch</h6>
+        <div className="d-flex flex-row presenters-index p-0">
+            <div className="col-5"><h6 className="mx-5 mt-3">entertainment | sports bank | culture | news and gossip ...</h6></div>
+            <div className="col-5"><p className="small lh-1 text-start mx-5 mt-2">sports and entertainment, culture and so much more here <br/> on 100.2 Pakwach fm</p></div>
+            <div className="col-2 main-orange"><h6 className="px-3 pointer mt-3 text-white" onClick={handleShow2}>get in touch</h6></div>
         </div>
         </div>
         <div className="d-sm-block d-md-none d-lg-none nav-top bg-pakwach1">
@@ -199,9 +199,9 @@ export default function NavBar(props){
                 </div>
             </Modal>
         </div>
-        <div className="d-flex flex-row p-3 presenters-index">
-            <h6 className="small button rounded p-2" onClick={handleShow2}>advertise</h6>
-            <h6 className="lh-1 mx-3 mt-2">entertainment | culture | news</h6>
+        <div className="d-flex flex-row presenters-index">
+        <div className="col-4 main-orange"><h6 className="small mt-3 text-white" onClick={handleShow2}>advertise</h6></div>
+        <div className="col-8"><h6 className="lh-1 mx-3 mt-2">entertainment | culture | news</h6></div>
         <div className="row">
             <Modal show={show2} onHide={handleClose2} className="mt-5 p-2">
                 <Form className="p-4">
@@ -216,7 +216,7 @@ export default function NavBar(props){
         </div>
         <div className="px-lg-5 px-4 py-3">
             <div>
-                <TabContent id="tab1" activeTab={activeTab}><Home handletab6 = {handleTab6}/></TabContent>
+                <TabContent id="tab1" activeTab={activeTab}><Home handletab6 = {handleTab6} handletab3 = {handleTab3}/></TabContent>
             </div>
             <div>
                 <TabContent id="tab3" activeTab={activeTab} ><Programming/></TabContent>
@@ -268,7 +268,7 @@ export default function NavBar(props){
             <div className="d-flex flex-row justify-content-center p-lg-5 p-4">
                 <h6 className="text-start">follow pakwachfm on <br/> social media</h6>
                 <div className="active">
-                <FaFacebook size={30} className="mx-2"/><FaTwitter size={30}/><FaWhatsapp size={30} className="mx-2"/><FaYoutube size={30}/>
+                <FaFacebook size={25} className="mx-2"/><FaTwitter size={25}/><FaWhatsapp size={25} className="mx-2"/><FaYoutube size={25}/>
                 </div>
             </div>
         </div>

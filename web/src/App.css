@@ -57,29 +57,31 @@ h6{
   font-size: small !important;
   text-transform: uppercase !important;
   line-height: 90% !important;
+  color: #717171 !important;
 }
 .small{
   font-weight: small !important;
 }
 h5{
   line-height: 90% !important;
-  color: #282c34 !important;
+  color: #232324 !important;
 }
 .link{
-  color: #F26425 !important;
+  color: #ff4500 !important;
 }
 .button{
-  background-color: #F26425 !important;
+  background-color: #ff4500 !important;
   color: whitesmoke !important;
 }
 a{
-  color: #F26425 !important;
+  color: #ff4500 !important;
   text-decoration: none !important;
 }
 .active{
-  color: #F26425;
+  color: #ff4500 !important;
   /* color: #fa9d74; */
   cursor: pointer;
+  font-weight: bolder;
 }
 .tab-item{
   cursor: pointer;
@@ -154,4 +156,11 @@ img{
 }
 .top{
   margin-top: 18%;
+}
+/* h6.active{
+  background: -webkit-linear-gradient(right, #f2632592, #f2632507,#f2632507);
+} */
+.main-orange{
+  background-color: #ff4500;
+  color: white !important;
 }

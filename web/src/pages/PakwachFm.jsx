@@ -33,7 +33,7 @@ export default function PakwachFm(props){
                     <h6 className="p-2 border-start">get in touch</h6>
                 </div>
                 <div className="row presenters-index p-5 rounded-2 mt-2 pointer" onClick={props.handletab6}>
-                <h6 className="text-start my-3">in studio with you.... | find out who is bringing you the best gossip | the best music...</h6>
+                <h6 className="text-start text-white my-3">in studio with you.... | find out who is bringing you the best gossip | the best music...</h6>
                     <h6 className="mt-5 text-start pt-5">presenters</h6>
                     <h6 className=" p-2 border-start">check em' out</h6>
                 </div>
@@ -59,9 +59,9 @@ export default function PakwachFm(props){
                             <h5 className="lh-1">Pakwach FM offers various talk show programs with the very best setting and presentations</h5>
                         </div>
                     </div>
-                    <div className="p-3 d-flex flex-row presenters-index rounded-2">
-                        <p className="lh-1 small mx-lg-5 mx-2 text-start d-none d-d-md-block d-lg-block">we offer lots of services whatever fits your pick, get in touch with us and we shall guarantee the best for you. Dj mentions, broadcasting both indoor and outdoor... and so much more</p>
-                        <h6 className="p-2 border-start">more services</h6>
+                    <div className="d-flex flex-row">
+                        <h6 className="lh-1 small border-start px-3 mx-lg-5 mx-2 text-start d-none d-d-md-block d-lg-block">we offer lots of services whatever fits your pick, get in touch with us and we shall guarantee the best for you. Dj mentions, broadcasting both indoor and outdoor... and so much more</h6>
+                        <h6 className="p-2 px-5 main-orange" onClick={props.handletab3}>more services</h6>
                     </div>
                 </div>
                 </div>
