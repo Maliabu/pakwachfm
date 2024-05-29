@@ -8,16 +8,15 @@ import News from "./News";
 import Sports from "./Sports";
 import Programming from "./Programming";
 import Presenters from "./Presenters";
-import Events from "./Events";
 import Menu from '../images/menu.png'
+import Community from "./Community";
 import '../App.css'
 import Logo from '../images/logo.png'
 import Headlines from "./Headlines";
 import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 import Advertise from "./Advertise";
-import {FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaArrowDown, FaSearch, FaMegaport} from 'react-icons/fa'
+import {FaFacebook, FaWhatsapp, FaTwitter, FaYoutube, FaSearch, FaArrowDown, FaRegObjectGroup, FaPeopleCarry, FaPeopleArrows, FaUsers, FaMicrophoneAlt} from 'react-icons/fa'
 
 export default function NavBar(props){
     const [formData, setFormData] = useState(
@@ -29,6 +28,8 @@ export default function NavBar(props){
     const [show, setShow] = useState(false)
     const [show1, setShow1] = useState(false)
     const [show2, setShow2] = useState(false)
+    const [show3, setShow3] = useState(false)
+    const [show4, setShow4] = useState(false)
     const searchCriteria = [
         {
             "name": "news",
@@ -58,7 +59,7 @@ export default function NavBar(props){
             const SearchFilter = searchCriteria.filter((item)=>{ if(item.name.toLowerCase().includes(search.toLowerCase())){return item;}})
             const myFinalSearch = SearchFilter.map((item) => {return <TabItem activeTab={activeTab} setActiveTab={setActiveTab} show1={show} setShow1={setShow} id={item.tab} title={<h6>{item.name}</h6>}/>})
             return(
-                <div className="py-4">{myFinalSearch}</div>
+                <div className="pt-4">{myFinalSearch}</div>
             )
         }
     }
@@ -72,6 +73,12 @@ export default function NavBar(props){
     const handleShow2 = () => {
         setShow2(true)
     }
+    const handleShow3 = () => {
+        setShow3(true)
+    }
+    const handleShow4 = () => {
+        setShow4(true)
+    }
     const handleClose = () => {
         setShow(false)
     }
@@ -80,6 +87,12 @@ export default function NavBar(props){
     }
     const handleClose2 = () => {
         setShow2(false)
+    }
+    const handleClose3 = () => {
+        setShow3(false)
+    }
+    const handleClose4 = () => {
+        setShow4(false)
     }
     const handleTab1 = () => {
         setActiveTab("tab1")
@@ -101,6 +114,9 @@ export default function NavBar(props){
     }
     const handleTab7 = () => {
         setActiveTab("tab7")
+    }
+    const handleTab10 = () => {
+        setActiveTab("tab10")
     }
     const handleSearch = (event) => {
         const name = event.target.name;
@@ -124,7 +140,7 @@ export default function NavBar(props){
                     <FaSearch className="active" onClick={handleShow}/>
                 </div>
             </div>
-            <Modal show={show} onHide={handleClose} className="mt-5 p-2">
+            <Modal show={show} onHide={handleClose} className="mt-5 shadow-sm p-2">
                 <Form className="p-2 px-3">
                     <Form.Label><h6>Search</h6></Form.Label>
                     <Form.Control autoFocus placeholder="search here" type="text" name="search" onChange={handleSearch}/>
@@ -137,7 +153,7 @@ export default function NavBar(props){
             </div>
         </div>
         <div className="pb-1">
-        <div className=" row px-lg-5 p-3 mx-5 bg-white rounded-bottom-3">
+        <div className=" row px-lg-3 p-3 mx-5 bg-white rounded-bottom-3">
             <div className="col-lg-1 col-2">
                 <TabItem id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab1} title={<span className="tab-item">Home</span>}/>
             </div>
@@ -155,12 +171,35 @@ export default function NavBar(props){
             </div>
             <div className="col-lg-1 col-2">
                 <TabItem id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab2} title={<span className="tab-item">About</span>}/>
+            </div><div className="col-lg-6 text-end">
+            <div className="d-flex flex-row justify-content-end">
+            <h6 className="m-2">OUR COMMUNITY</h6>
+        <img src={Menu} alt="logo" width="3%" height="3%" className="mt-1" onClick={handleShow4}/></div>
+            <Modal show={show4} onHide={handleClose4} className="margin-top-plus p-0">
+            <div className="row kitenge p-0 rounded-3 m-0">
+                <div className="col-5 p-2 px-4">
+                <h3 className="py-3 lh-1">Let's Explore Together</h3>
+                <div className="m-3">
+                <div className="py-1"><TabItem id="tab10" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab10} show1={show4} setShow1={setShow4} title={<span className="tab-item text-white">EVENTS</span>}/></div>
+                <div>
+                <TabItem id="tab10" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab10} show1={show4} setShow1={setShow4} title={<span className="tab-item text-white">PODCASTS</span>}/></div>
+                <div className="py-1">
+                <TabItem id="tab10" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab10} show1={show4} setShow1={setShow4} title={<span className="tab-item text-white">GALLERY</span>}/></div>
+                </div>
+            </div>
+            <div className="col-7 p-0">
+            <img src="https://media.istockphoto.com/id/2149086661/es/foto/hipop%C3%B3tamo-con-cr%C3%ADa-en-el-parque-nacional-murchison-falls-uganda.webp?b=1&s=170667a&w=0&k=20&c=7pw09hgOeVndXXmmDI2gaiyw-p56uz-oalGbJZ_a8JM=" alt="logo" width="100%" className="my-3"/>
+            </div>
+            </div>
+                <p className="small d-none bg-light p-2 text-center"><span className="mx-2">Our social media community</span><FaFacebook size={20} className="mx-3"/><FaTwitter size={20}/><FaWhatsapp size={20} className="mx-3"/><FaYoutube size={20}/></p>
+            </Modal>
             </div>
         </div>
         </div>
         <div className="d-flex flex-row bg-white shadow p-0">
             <div className="col-5"><h6 className="mx-5 mt-3">entertainment | sports bank | culture | news and gossip ...</h6></div>
-            <div className="col-5"><p className="small lh-1 text-start mx-5 mt-2">sports and entertainment, culture and so much more here <br/> on 100.2 Pakwach fm</p></div>
+            <div className="col-5 text-start p-2">
+            </div>
             <div className="col-2 main-orange"><h6 className="px-3 pointer mt-3 text-white" onClick={handleShow2}>get in touch</h6></div>
         </div>
         </div>
@@ -170,7 +209,7 @@ export default function NavBar(props){
         <img src={Menu} alt="logo" width="60%" className="mt-2" onClick={handleShow1}/>
             <Modal show={show1} onHide={handleClose1} className="mt-5 p-0 w-75">
             <div className="py-5 px-4">
-                <p className="small">Dashboard</p>
+                <p className="small d-none">Dashboard</p>
                 <div className="py-2 border-top border-bottom">
                 <div className="py-3"><TabItem id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab1} show1={show1} setShow1={setShow1} title={<span className="tab-item">Home</span>}/></div>
                 <div>
@@ -182,7 +221,7 @@ export default function NavBar(props){
                 <div className="py-3">
                 <TabItem id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} onClick={handleTab2} show1={show1} setShow1={setShow1} title={<span className="tab-item">About</span>}/></div>
                 </div>
-                <p className="small pt-4 text-center"><FaFacebook size={20} className="mx-3"/><FaTwitter size={20}/><FaWhatsapp size={20} className="mx-3"/><FaYoutube size={20}/></p>
+                <p className="small d-none pt-4 text-center"><FaFacebook size={20} className="mx-3"/><FaTwitter size={20}/><FaWhatsapp size={20} className="mx-3"/><FaYoutube size={20}/></p>
             </div>
             </Modal>
         </div>
@@ -205,9 +244,15 @@ export default function NavBar(props){
                 </div>
             </Modal>
         </div>
-        <div className="d-flex flex-row bg-white shadow">
-        <div className="col-4 main-orange"><h6 className="small mt-4 text-white" onClick={handleTab7}>advertise</h6></div>
-        <div className="col-8 p-2"><h6 className="lh-1 mx-3 mt-2">entertainment | culture | news | sports </h6></div>
+        <div className="row bg-dark shadow">
+        <div className="col-6 p-3">
+        <div className="d-flex flex-row justify-content-center border-end">
+        <h6 className="small m-2" onClick={handleTab7}>advertise</h6><FaMicrophoneAlt className="mt-1 active"/></div></div>
+        <div className="col-6 p-3" onClick={handleTab10}>
+        <div className="d-flex flex-row justify-content-start">
+            <h6 className="m-2">OUR COMMUNITY</h6>
+        <FaUsers className="mt-1 active"/></div>
+        </div>
         <div className="row">
             <Modal show={show2} onHide={handleClose2} className="mt-5 p-2">
                 <Form className="p-4">
@@ -242,13 +287,16 @@ export default function NavBar(props){
             <div>
                 <TabContent id="tab7" activeTab={activeTab} ><Advertise/></TabContent>
             </div>
+            <div>
+                <TabContent id="tab10" activeTab={activeTab} ><Community/></TabContent>
+            </div>
         </div>
         <div className="p-lg-5 p-3 bg-pakwach1"><Headlines/></div>
-        <div className="p-5 main">
+        <div className="p-5 bg-dark">
         <div className="d-flex flex-row justify-content-start">
                 <h6 className="text-start py-3">find out more news <br/> and sports, entertainment at our page</h6>
             </div>
-            <div className="row p-lg-5 p-2 justify-content-start bg-white rounded-3">
+            <div className="row p-lg-5 p-2 justify-content-start text-white shadow rounded-3">
                 <div className="col-sm-12 col-lg-6 text-start">
                     <h6>quick links</h6>
                     <p className="lh-1"><span>Programming</span><br/><span>Presenters</span><br/><span>Sports</span><br/><span>News</span></p>

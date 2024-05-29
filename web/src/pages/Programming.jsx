@@ -88,7 +88,7 @@ export default function Programming(){
                         </div>
                         </div>
                         <div className="col-lg-4 text-start">
-                        <div className="row p-lg-5">
+                        <div className="row p-lg-5 p-3">
                         <div className="row presenters-index1 p-5 rounded-2">
                             <h6 className="text-start text-white my-3">in studio with you.... | find out who is bringing you the best music...</h6>
                             <h6 className="mt-5 text-start pt-5 text-white">dj</h6>

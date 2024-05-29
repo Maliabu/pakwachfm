@@ -70,8 +70,8 @@ h6{
   font-size: small !important;
   text-transform: uppercase !important;
   line-height: 90% !important;
-  color: #000000 !important;
-  font-weight: 200 !important;
+  color: #a4a6aa !important;
+  font-weight: 300 !important;
 }
 .small{
   font-weight: small !important;
@@ -128,15 +128,24 @@ button:focus:not(:focus-visible) {
 .modal-content{
   border: none !important;
   outline: none !important;
+  /* background-color: rgba(136, 44, 44, 0) !important; */
+  box-shadow: 1px 1px 6px #282c3410 !important;
 }
-.modal-dialog{
+/* .modal-dialog{
   margin: 0% !important;
+} */
+.modal-dialog{
+  margin-right: 0% !important;
+  background-color: rgba(136, 44, 44, 0) !important;
 }
 .pointer{
   cursor: pointer;
 }
+.margin-top-plus{
+  margin-top: 8% !important;
+}
 .presenters-index{
-  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.958)), url("images/verrati.jpg");
+  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0),rgba(22, 22, 22, 0.681),rgba(22, 22, 22, 0.958)), url("images/verrati.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: aliceblue !important;
